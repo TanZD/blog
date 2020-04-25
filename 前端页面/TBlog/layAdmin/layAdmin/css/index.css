@@ -1,0 +1,211 @@
+.sidebar{
+	transition: .3s;
+	width: 60px;
+	margin-top: 60px;
+}
+.layui-nav-item span{
+	display: none;
+	margin-left: 5px;
+}
+.logo_text{
+	font-size: 25px;
+  font-family: inherit;
+  line-height: 60px;
+  cursor: pointer;
+}
+.mainbar_text{
+	font-size: 15px;
+  line-height: 60px;
+}
+.mainbar_image{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.sidebar_btn{
+	color: white;
+  font-size: 30px;
+  line-height: 60px;
+  cursor: pointer;
+  color: rgba(255,255,255,.7);
+}
+.sidebar_btn:hover{
+	color: #FFFFFF;
+}
+.mainbar_floatbar{
+  width: 250px;
+  height: 160px;
+  left: auto;
+  right: 0;
+  transition: .2s;
+}
+.mainbar_floatbar ul li{
+	text-align: center;    
+	text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+}
+.floatbar_text{
+	color: #000000;
+	cursor: default;
+	font-size: 18px;
+	margin: 5px 10px;
+}
+.floatbar_image{
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}
+.kit-side-fold{
+	line-height: 45px;
+	cursor: pointer;
+	height: 45px;
+	width: 200px;
+	color: rgba(255,255,255,.7);
+}
+.kit-side-fold:hover{
+	color: #FFFFFF;
+}
+.kit-side-fold i{
+	padding-left: 20px;
+}
+.iframe_layout{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.mainbar_body{
+	margin-left: 60px;
+}
+.iframe_body::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width : 0px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.scrollbar::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width : 8px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background   : #3661e4b8;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.24) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.24) 50%,
+    rgba(255, 255, 255, 0.24) 75%,
+    transparent 75%,
+    transparent
+    );
+}
+.scrollbar::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background   : #ededed;
+}
+.iframe_body{
+  left: 60px;
+  top: 60px;
+  transition: .3s;
+  background-color: #f2f2f2;
+}
+/**
+width: 100%;
+position: relative!important;
+**/
+@media (min-width: 768px) {
+  .sidebar{
+    width: 200px;
+  }
+  .layui-nav-item span{
+    display: inline;
+  }
+  .mainbar_body{
+    margin-left: 200px;
+  }
+  .iframe_body{
+    left: 200px;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+
+
+.iframe_body::-moz-scrollbar {
+  /*滚动条整体样式*/
+  width : 0px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.scrollbar::-moz-scrollbar {
+  /*滚动条整体样式*/
+  width : 8px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.scrollbar::-moz-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background   : #3661e4b8;
+  background-image: -moz-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.24) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.24) 50%,
+    rgba(255, 255, 255, 0.24) 75%,
+    transparent 75%,
+    transparent
+    );
+}
+.scrollbar::-moz-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background   : #ededed;
+}
+
+
+.iframe_body::-ms-scrollbar {
+  /*滚动条整体样式*/
+  width : 0px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.scrollbar::-ms-scrollbar {
+  /*滚动条整体样式*/
+  width : 8px;  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.scrollbar::-ms-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background   : #3661e4b8;
+  background-image: -ms-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.24) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.24) 50%,
+    rgba(255, 255, 255, 0.24) 75%,
+    transparent 75%,
+    transparent
+    );
+}
+.scrollbar::-ms-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background   : #ededed;
+}

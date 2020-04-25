@@ -1,0 +1,93 @@
+.bg{
+	background-color: cyan;
+}
+.canvas{
+	position: absolute;
+    height: 300px;
+    width: 340px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #1e1e1ec9;
+    border-radius: 8px;
+    opacity: 0.8;
+    box-shadow: -3px 3px 14px 1px #050404cf;
+}
+.logindiv div{
+	/*display: inline-block;*/
+	text-align: center;
+}
+.login-item{
+	display: inline-block;
+}
+#mpanel1 div{
+	margin: 0px auto;
+}
+.login-d{
+	margin: 5px 0 15px;
+
+}
+.loginbar{
+	margin: 15px 10px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #D3D7F7;
+}
+.i-class{
+	color: #FFFFFF;
+	padding-right: 10px;
+}
+
+.breath_c{
+	 /* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+    animation-name: breath;                         /* 动画名称 */
+    animation-duration: 5s;                         /* 动画时长3秒 */
+    animation-timing-function: ease-in-out;         /* 动画速度曲线：以低速开始和结束 */
+    animation-iteration-count: infinite;            /* 播放次数：无限 */
+ 
+    /* Safari and Chrome */
+    -webkit-animation-name: breath;                 /* 动画名称 */
+    -webkit-animation-duration: 5s;                 /* 动画时长3秒 */
+    -webkit-animation-timing-function: ease-in-out; /* 动画速度曲线：以低速开始和结束 */
+    -webkit-animation-iteration-count: infinite;    /* 播放次数：无限 */
+}
+
+@keyframes breath {
+    from { opacity: 1; }                          /* 动画开始时的不透明度 */
+    50%  { opacity: 0.8; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 1; }                          /* 动画结束时的不透明度 */    
+}
+ 
+@-webkit-keyframes breath {
+    from { opacity: 1; }                          /* 动画开始时的不透明度 */
+    50%  { opacity: 0.8; }                          /* 动画50% 时的不透明度 */
+    to   { opacity: 1; }                             /* 动画结束时的不透明度 */
+}
+
+.bg-class{
+	 /* IE10、Firefox and Opera，IE9以及更早的版本不支持 */
+    animation-name: bgcolor;                         /* 动画名称 */
+    animation-duration: 15s;                         /* 动画时长3秒 */
+    animation-timing-function: ease-in-out;         /* 动画速度曲线：以低速开始和结束 */
+    animation-iteration-count: infinite;            /* 播放次数：无限 */
+ 
+    /* Safari and Chrome */
+    -webkit-animation-name: bgcolor;                 /* 动画名称 */
+    -webkit-animation-duration: 15s;                 /* 动画时长3秒 */
+    -webkit-animation-timing-function: ease-in-out; /* 动画速度曲线：以低速开始和结束 */
+    -webkit-animation-iteration-count: infinite;    /* 播放次数：无限 */
+}
+
+@keyframes bgcolor {
+    from { background-color: #ff9393;}                          /* 动画开始时的不透明度 */
+    50%  { background-color: #577f1c; }
+    to   { background-color: #ff9393; }                          /* 动画结束时的不透明度 */    
+}
+ 
+@-webkit-keyframes bgcolor {
+    from { background-color: #ff9393;}                          /* 动画开始时的不透明度 */                   /* 动画开始时的不透明度 */
+    50%  { background-color: #577f1c; }
+    to   { background-color: #ff9393; }                          /* 动画结束时的不透明度 */    
+}

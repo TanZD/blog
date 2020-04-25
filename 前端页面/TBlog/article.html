@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-confirm/jquery-confirm.min.css">
+    <link rel="stylesheet" type="text/css" href="css/static.css">
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+</head>
+
+<body>
+    <div class="canvas">
+        <div id="header"></div>
+        <div class="container mainbar">
+            <div class="col-xs-12 col-sm-8 col-md-9">
+                <div class="article_page">
+                    <div class="article_detail">
+                        <div class="article_title">TITLE</div>
+                        <div class="article_message">
+                            <a id="mess_username" href="javascript:;" class="message_class">USERNAME</a>
+                            <span id="mess_create_time" class="message_class">CREATE TIME</span>
+                            <span id="mess_views" class="message_class">VIEWS</span>
+                            <div class="message_class">
+                                <span id="mess_collect" class="iconfont icon-shoucang">收藏</span>
+                            </div>
+                        </div>
+                        <div class="article_content"></div>
+                        <hr/>
+                        <div class="article_other">
+                            <div class="other_operate">
+                                <div class="other_mess">
+                                    <span id="other_like" class="iconfont icon-dianzan">
+                                        赞
+                                        <span style="font-size: 12px;"></span>
+                                    </span>
+                                </div>
+                                <div class="other_mess collect">
+                                    <span id="other_collect" class="iconfont icon-shoucang">收藏</span>
+                                </div>
+                            </div>
+
+                            <div class="article_cate">
+                                <div>
+                                    <div style="cursor: default;font-weight: bold;">所属分类: </div>
+                                    <div>
+                                        <ul class="category_list" id="cate_list">
+                                            <li><a href="javascript:;">Category1</a></li>
+                                            <li><a href="javascript:;">Category1</a></li>
+                                            <li><a href="javascript:;">Category1</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <ul id="tag_list">
+                                    <li class="tag_list">tag1</li>
+                                    <li class="tag_list">tag2</li>
+                                    <li class="tag_list">tag3</li>
+                                    <li class="tag_list">tag4</li>
+                                    <li class="tag_list">tag5</li>
+                                    <li class="tag_list">tag6</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="other_detail article_page">
+                    <div class="comment_detail">
+                        <div class="post_comment">
+                            <div class="post_com">发表评论:</div>
+                            <textarea class="comment_post" id="post_comment" placeholder="评论下呗"></textarea>
+                            <div class="comment_btn">
+                                <span class="comment_reply_user" style="display: none;">回复</span>
+                                <span class="comment_reply_cancel" style="display: none;"><a href="javascript:;">取消回复</a></span>
+                                <span class="comment_limit_num"></span>
+                                <button class="btn btn_p" id="submit_comment">发表</button>
+                            </div>
+                        </div>
+                        <div class="comment_list">
+                            <div class="post_com">评论列表:</div>
+                            <ul id="comment_list"></ul>
+                        </div>
+
+                        <div class="pagebar" style="text-align: right">
+                            <nav aria-label="Page navigation">
+                                <ul id="page_list" class="pagination">
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 sidebar">
+                <div class="user_message">
+                    <div style="text-align: left;padding-top: 5px;font-weight: bold;">
+                        关于作者
+                    </div>
+                    <div id="user_mess"></div>
+                </div>
+                <div class="user_article_times">
+                    <div style="text-align: left;padding-top: 5px;font-weight: bold;">
+                        TA的文章
+                    </div>
+                    <ul class="other_article_ul"></ul>
+                </div>
+                <div class="user_article_times">
+                    <div style="text-align: left;padding-top: 5px;font-weight: bold;">
+                        TA的归档
+                    </div>
+                    <ul class="other_timeline_ul"></ul>
+                </div>
+                <div class="user_article_times">
+                    <div style="text-align: left;padding-top: 5px;font-weight: bold;">
+                        TA的分类
+                    </div>
+                    <ul class="other_category_ul"></ul>
+                </div>
+                <!-- <div class="user_article_times">
+                    <div style="text-align: left;padding-top: 5px;font-weight: bold;">
+                        TA的标签
+                    </div>
+                    <ul class="other_tags_ul"></ul>
+                </div> -->
+                <div class="user_article_times">
+                    <div style="text-align: left;padding-top: 5px;font-weight: bold;">
+                        其它文章
+                    </div>
+                    <ul class="other_otherarticle_ul"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <div class="side_toolbar" id="btp">
+        <a href="javascript:;" id="btp_top">TOP</a>
+        <a href="javascript:;" id="btp_like" class="iconfont icon-dianzan icon_r"></a>
+        <a href="javascript:;" id="btp_collect" class="iconfont icon-shoucang icon_y"></a>
+        <a href="javascript:;" id="btp_comment" class="iconfont icon-taolunqu"></a>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jqPage/jq-paginator.min.js"></script>
+<script type="text/javascript" src="jquery-confirm/jquery-confirm.min.js"></script>
+<script type="text/javascript" src="js/scrollbar.js"></script>
+<script type="text/javascript" src="js/article.js"></script>
+<!-- <script type="text/javascript" src="tinymce/tinymce.min.js"></script> -->
+
+</html>

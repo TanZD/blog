@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../layui/layui.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages/userInfo.css">
+</head>
+<body>
+	<div class="mainbar">
+		<div style="margin-bottom: 10px;">
+			<a href="javascript:history.go(-1)">
+				<i class="fa fa-backward fa-lg"></i>
+			</a>
+		</div>
+		<div class="mainbar_title"><h1>设置密码</h1></div>
+		<div>
+	  		<div class="layui-form-item">
+			    <label class="layui-form-label">新密码</label>
+			    <div class="layui-input-block">
+			      <input type="password" name="password" class="layui-input">
+			    </div>
+		  	</div>
+	  		<div class="layui-form-item">
+			    <label class="layui-form-label">请重复密码</label>
+			    <div class="layui-input-block">
+			      <input type="password" name="rePassword" class="layui-input">
+			    </div>
+		  	</div>
+		  	<div class="layui-input-block" id="err" style="color: red;display: none;"></div>
+		  	<div class="layui-input-block"><button class="layui-btn" id="updatePass">确认修改</button></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../layui/layui.js"></script>
+<script type="text/javascript" src="../jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	layui.use('layer', function(){
+	  var layer = layui.layer;
+	});  
+
+	//获取url参数
+	function getQueryVariable(variable){
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+           var pair = vars[i].split("=");
+           if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+	}
+
+	var user_id=getQueryVariable("user_id");
+	$("#updatePass").click(function(){
+		if(!$("input[name='password']").val()!=""){
+			$("#err").empty().append("请填写密码").show();
+			$("input[name='password']").focus();
+			return;
+		}
+		if(!$("input[name='rePassword']").val()!=""){
+			$("#err").empty().append("请确认密码").show();
+			$("input[name='rePassword']").focus();
+			return;
+		}
+		var pass=$("input[name='password']").val();
+		var rePass=$("input[name='rePassword']").val();
+		if(pass!=rePass){
+			$("#err").empty().append("两次密码不一致").show();
+			$("input[name='password']").focus();
+			return;
+		}
+		$("#err").empty().hide();
+		$.ajax({
+			url:"http://106.14.135.196:8080/Blog/user/setPassword",
+			type:"POST",
+			dataType:"JSON",
+			xhrFields:{
+				withCredentials: true
+			},
+			data:{"password":pass,"user_id":user_id},
+			success:function(data){
+				console.log(data["msg"])
+				layer.msg(data["msg"],function(){
+					window.location.reload();
+				})
+			}
+		})
+	})
+
+</script>
+</html>

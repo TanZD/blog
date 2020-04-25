@@ -1,0 +1,35 @@
+{
+    "msg": "成功",
+    "models": [
+        {
+            "image": "",
+            "user_mail": "345345@qq.com",
+            "gender": 0,
+            "profile": "",
+            "id": 8,
+            "isAdmin": 0,
+            "register_time": "2020-03-13",
+            "username": "谭志东"
+        },
+        {
+            "image": "7ea63f8d918d46a982de3fef813d561b.jpeg",
+            "user_mail": "234234@qq.com",
+            "gender": 0,
+            "profile": "",
+            "id": 7,
+            "isAdmin": 0,
+            "register_time": "2020-03-06",
+            "username": "east7"
+        }
+    ],
+    "code": 1,
+    "data": null,
+    "pageInfo": {
+        "totalpage": 3,
+        "totalNum": 5,
+        "limit": 2,
+        "startNum": 0,
+        "page": 1
+    },
+    "status": 200
+}

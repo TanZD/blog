@@ -1,0 +1,25 @@
+﻿body {
+    background-color: #e6e6e6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.mainbar {
+    margin: 15px auto;
+}
+
+.sidebar {
+    padding: 0px;
+    background-color: #fff;
+}
+
+.center {
+    background-color: #fff;
+}

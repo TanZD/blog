@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>博客</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="jquery-confirm/jquery-confirm.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/static.css">
+</head>
+
+<body>
+    <div class="canvas">
+        <div id="header"></div>
+        <div class="container">
+            <div class="mainbar row">
+                <div class="col-xs-12 col-sm-8 col-md-9">
+                    <!-- <div class="titlebar">
+	  					<div class="seearchbar">
+  							<a href="#" class="search_a" id="search_btn">
+  								<i class="fa fa-search fa-lg search_i"></i>
+  							</a>
+  							<input type="text" placeholder="搜你所想" class="search_input" name="search">
+	  					</div>
+	  				</div> -->
+                    <div class="articlebar">
+                        <div>
+                            <div class="selectbar panel panel-default">
+                                <div class="sortbar">
+                                    <span class="select_class active_select">博客</span>
+                                    <span class="select_class">动态</span>
+                                    <span class="select_class">我的关注</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listbar panel panel-default">
+                            <div class="titlebar">
+                                <div class="order_fbar">文章列表</div>
+                                <div class="orderbar">
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button id="selectbtn" style="width: 120px;" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    时间排序 <span class="caret"></span>
+									  </button>
+                                        <ul class="dropdown-menu" id="selectorder">
+                                            <li><a href="#">时间排序</a></li>
+                                            <li><a href="#">点击量排序</a></li>
+                                            <li><a href="#">点赞数排序</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div style="clear: both;"></div>
+                            </div>
+                            <div id="s_article_list">
+                                <li class="nav article_list">
+                                    <div class="list_title list_text">TITLETITLETITLE</div>
+                                    <div class="list_summary list_text">SUMMARYSUMMARYSUMMARYSUMMARY</div>
+                                    <div class="bottom_list">
+                                        <div class="b_user" style="display: inline-block;">
+                                            <img class="b_user_img" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1586423338&di=2b09c19381823a7a8159aaf127f749e8&src=http://pp.qn.img-space.com/g2/M00/06/5C/Cg-4k1henG2ILcQJAAMdbxnplooAAJ3twKWx-kAAx2H995.jpg?imageView2/2/w/1200/q/100/ignore-error/1/">
+                                            <div class="b_user_name">Username</div>
+                                        </div>
+                                        <div class="b_time" style="display: inline-block;">发布于: 2020-02-15
+                                        </div>
+                                        <div class="b_status">
+                                            <span class="col_text iconfont icon-yanjing">1999</span>
+                                            <span class="col_text iconfont icon-pinglun">1999</span>
+                                            <span data-id="1" class="glyphicon iconfont icon-aixin  like_btn">2019</span>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </li>
+                                <li class="nav article_list">
+                                    <div class="list_title list_text">TITLETITLETITLETI</div>
+                                    <div class="list_summary list_text">SUMMARYSUMMARYSUMMARYSUMMARYSUMMARY</div>
+                                    <div class="bottom_list">
+                                        <div class="b_user" style="display: inline-block;">
+                                            <img class="b_user_img" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1586423338&di=2b09c19381823a7a8159aaf127f749e8&src=http://pp.qn.img-space.com/g2/M00/06/5C/Cg-4k1henG2ILcQJAAMdbxnplooAAJ3twKWx-kAAx2H995.jpg?imageView2/2/w/1200/q/100/ignore-error/1/">
+                                            <div class="b_user_name">Username</div>
+                                        </div>
+                                        <div class="b_time" style="display: inline-block;">发布于: 2020-02-15
+                                        </div>
+                                        <div class="b_status">
+                                            <span class="col_text iconfont icon-yanjing">1999</span>
+                                            <span class="col_text iconfont icon-pinglun">1999</span>
+                                            <span data-id="1" class="glyphicon iconfont icon-aixin  like_btn">2019</span>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="pagebar" style="text-align: center">
+                            <nav aria-label="Page navigation">
+                                <ul id="page_list" class="pagination">
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar col-xs-12 col-sm-4 col-md-3">
+                    <div class="topbar" id="user_mess">
+                        <div class="top_btn">
+                            <a href="login.html"><button class="btn btn-default" style="margin-bottom: 10px;">登录</button></a>
+                            <a href="register.html"><button class="btn btn-default" style="margin-bottom: 10px;">注册</button></a>
+                        </div>
+                    </div>
+
+                    <div class="secondbar">
+                        <div class="hot_category">
+                            <div class="cate_h">
+                                <div class="cate_header cate_title" style="float: left;line-height: 30px;">分类</div>
+                                <a href="#">
+                                    <div class="cate_header cate_more">更多</div>
+                                </a>
+                                <div style="clear: both;"></div>
+                            </div>
+                            <div>
+                                <ul class="cate_list_ul" id="cate_ul"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thirdbar">
+                        <div class="hot_category">
+                            <div class="cate_h">
+                                <div class="cate_header cate_title" style="float: left;line-height: 30px;">标签</div>
+                                <a href="#">
+                                    <div class="cate_header cate_more">更多</div>
+                                </a>
+                                <div style="clear: both;"></div>
+                            </div>
+                            <div>
+                                <ul class="tag_class" id="tag_ul"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 未登录时显示 -->
+                    <div class="topbar">
+                        <div style="text-align: left;padding-top: 5px;font-weight: bold;">
+                            关于作者
+                        </div>
+                        <div>
+                            <img class="top_img" src="image/profile_image.jpg">
+                        </div>
+                        <div class="col_text top_user">谭志东Tan ZhiDong</div>
+                        <div class="top_user" style="word-wrap: break-word;">个人练习项目，欢迎您的到来</div>
+                        <div class="top_user_m">
+                            <div>
+                                <span>中山小榄</span><span>Age: 22</span>
+                            </div>
+                            <div>
+                                <span>QQ_mail: 850222009@qq.com</span>
+                            </div>
+                            <div>
+                                <span>Phone: 15007611599</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 页尾 -->
+        <div id="footer"></div>
+        <!-- <footer class="footer" style="background-color: #222">
+		    <div class="container">
+		    	<div class="navbar-header">
+		    		<div class="nav navbar-nav">
+		    			<div class="footer_list">
+		    				Footer
+		    				QQ_mail:850222009@qq.com
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</footer> -->
+        <div class="side_toolbar" id="btp">
+            <a href="javascript:;" id="btp_top">TOP</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jqPage/jq-paginator.min.js"></script>
+<script type="text/javascript" src="jquery-confirm/jquery-confirm.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/scrollbar.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $.ajax({
+            url: "http://127.0.0.1:8080/Blog/user/islogin",
+            dataType: "JSON",
+            type: "POST",
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function(data) {
+                console.log(data)
+            },
+            error: function(xhr) {
+                console.log(xhr)
+            }
+        })
+
+    })
+</script>
+
+</html>

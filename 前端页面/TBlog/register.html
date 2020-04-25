@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注册</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/verify.css">
+    <link rel="stylesheet" type="text/css" href="css/static.css">
+    <link rel="stylesheet" type="text/css" href="jquery-confirm/jquery-confirm.min.css">
+</head>
+
+<body>
+    <div class="canvas">
+        <div class="loginbar">
+            用户注册
+        </div>
+        <div class="logindiv">
+            <div class="login-d">
+                <div class="login-item i-class">
+                    <i class="fa fa-user-o fa-lg"></i>
+                </div>
+                <div class="login-item">
+                    <input id="username" type="text" name="username" placeholder="用户名" class="form-control">
+                </div>
+                <div class="" id="nameError"></div>
+            </div>
+            <div class="login-d">
+                <div class="login-item i-class">
+                    <i class="fa fa-envelope-o fa-lg"></i>
+                </div>
+                <div class="login-item">
+                    <input id="email" type="text" placeholder="邮箱号" name="user_mail" class="form-control">
+                </div>
+                <div class="" id="mailError"></div>
+            </div>
+            <div class="login-d">
+                <div class="login-item i-class">
+                    <i class="fa fa-key fa-lg"></i>
+                </div>
+                <div class="login-item">
+                    <input id="password" type="password" placeholder="密码" name="password" class="form-control">
+                </div>
+                <div class="" id="passwordError"></div>
+            </div>
+            <div class="login-d">
+                <div class="login-item i-class">
+                    <i class="fa fa-key fa-lg"></i>
+                </div>
+                <div class="login-item">
+                    <input id="rPassword" type="password" placeholder="请重复密码" name="password" class="form-control">
+                </div>
+                <div class="" id="rPasswordError"></div>
+            </div>
+            <div class="login-d">
+                <div class="">
+                    <div id="mpanel1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="login_toastbar">
+            <a href="login.html">已经有账号</a>
+        </div>
+        <div class="loginbtn">
+            <button class="btn btn-default" id="submit">注册</button>
+        </div>
+    </div>
+
+    <!-- <div class="modal fade toast_modal" id="modale" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-body" style="text-align: center">content</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">确定</button></div></div></div></div> -->
+</body>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/registerCheck.js"></script>
+<script type="text/javascript" src="js/verify.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery-confirm/jquery-confirm.min.js"></script>
+<script type="text/javascript">
+    // HtmlLoad();
+
+    // function HtmlLoad(url) {
+    //     $("#loadingModal").modal("show")
+    // }
+</script>
+
+</html>

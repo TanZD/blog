@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>文章列表</title>
+	<link rel="stylesheet" type="text/css" href="../layui/layui.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages/index.css">
+</head>
+<body>
+  	<div class="mainbar">
+		<div class="mainbar_title"><h1>文章列表</h1></div>
+		<div class="layui-form searchbar">
+			<div class="layui-form-item seaerchbar_item">
+				<input type="text" id="search_word" name="search_wrod" class="layui-input" placeholder="输入需要查找的文章内容">
+			</div>
+			<!-- <div class="layui-form-item seaerchbar_item">
+				<select name="city" lay-verify="" id="search_type">
+				  <option value="1" selected="">ID</option>
+				  <option value="2">标题</option>
+				  <option value="3">内容</option>
+				  <option value="4">创建时间</option>
+				</select> 
+			</div> -->
+			<div class="seaerchbar_item">
+				<button class="layui-btn" id="search">搜索</button>
+			</div>
+		</div>
+		<table id="art_table" lay-filter="test"></table>
+		<div id="test1" style="text-align: right"></div>
+	</div>
+</body>
+<script type="text/html" id="barDemo">
+  <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<script type="text/javascript" src="../layui/layui.js"></script>
+<script type="text/javascript" src="../jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/pages/articlelist.js"></script>
+</html>
