@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task" 
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+        http://www.springframework.org/schema/task  
+		http://www.springframework.org/schema/task/spring-task-3.2.xsd ">
+
+	<context:property-placeholder location="classpath:*.properties" />
+
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"></property>
+		<property name="jdbcUrl" value="${jdbc.url}"></property>
+		<property name="user" value="${jdbc.root}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+		lazy-init="false">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation" value="classpath:hibernate.cfg.xml"></property>
+		<!-- 配置 Hibernate基于注解的实体类的位置及名称 -->
+		<!-- <property name="packagesToScan" value="com.zd.Entity"/> -->
+		<property name="packagesToScan">
+			<list>
+				<value>com.zd.Entity</value>
+				<value>com.zd.VO</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 声明hibernate事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 邮箱发送配置 -->
+	<bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${mail.host}" />
+		<property name="port" value="${mail.port}" />
+		<property name="username" value="${mail.username}" />
+		<property name="password" value="${mail.password}" />
+		<property name="defaultEncoding" value="${mail.DefaultEncoding}"></property>
+		<property name="javaMailProperties">
+		<props>
+			<prop key="mail.smtp.auth">${mail.smtp.auth}</prop>
+			<prop key="mail.smtp.socketFactory.class">${mail.smtp.socketFactory.class}</prop>
+		</props>
+		</property>
+	</bean>
+
+	<!-- 开启注解处理器 -->
+	<context:annotation-config></context:annotation-config>
+
+	<!-- 基于@Transaction注解方式的事务管理 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<context:component-scan base-package="com.zd.Service"></context:component-scan>
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+	<!-- 开启Spring的Bean自动扫描机制 -->
+	<context:component-scan base-package="com.zd">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Controller" />
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+	</context:component-scan>
+
+	<!-- 引入同文件夹下的redis属性配置文件 -->
+	<import resource="spring-redis.xml" />
+	
+	<bean id="logAspect" class="com.zd.Util.LogAspect"></bean>
+	<aop:config>
+		<!-- 切面 -->
+		<aop:aspect id="Aspect" ref="logAspect">
+			<!-- 切点 -->
+			<aop:pointcut expression="(execution(* com.zd.*.*.*(..)))" id="LAspect"/>
+			<!-- 环绕通知 -->
+			<aop:around method="takeSeats" pointcut-ref="LAspect"/>
+		</aop:aspect>
+	</aop:config>
+	
+	
+	<task:annotation-driven/>
+
+</beans>

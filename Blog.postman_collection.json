@@ -1,0 +1,4317 @@
+{
+	"info": {
+		"_postman_id": "28311203-0f65-4eb2-a87d-f8e5828d4c88",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8080/Blog/user/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "username",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "谭志东",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_mail",
+							"value": "850222009@qq.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/getByUsername?username=East_ZD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/getByUsername?username=East_ZD",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"getByUsername"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "East_ZD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/getByMail?mail=",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/getByMail?mail=",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"getByMail"
+					],
+					"query": [
+						{
+							"key": "mail",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "East",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "321321",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "remember",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://106.14.135.196:8080/Blog/user/login",
+					"protocol": "http",
+					"host": [
+						"106",
+						"14",
+						"135",
+						"196"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/logout",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/islogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/islogin",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"islogin"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "b0416847-7ced-448d-af28-6747ec8b77b4",
+					"name": "127.0.0.1:8080/Blog/user/islogin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/user/islogin",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"user",
+								"islogin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "224",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Mar 2020 09:09:08 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "74AEBDA101E089BD9B86E64D7C566603",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[],\"code\":1,\"data\":{\"image\":\"\",\"forget\":\"\",\"password\":\"\",\"user_mail\":\"\",\"gender\":0,\"last_login_time\":\"\",\"profile\":\"\",\"id\":1,\"isAdmin\":0,\"register_time\":\"\",\"username\":\"\"},\"pageInfo\":null,\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/tag/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tag_name",
+							"value": "高 达 3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/tag/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"tag",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/tag/delete/7",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/tag/delete/7",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"tag",
+						"delete",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/tag/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/tag/getAll",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"tag",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/tag/getHotTags/page/1/limit/10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/tag/getHotTags/limit/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"tag",
+						"getHotTags",
+						"limit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/tag/getArticleTag/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/tag/getArticleTag/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"tag",
+						"getArticleTag",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/tag/get/page/1/limit/3/order/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/tag/get/page/1/limit/3/order/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"tag",
+						"get",
+						"page",
+						"1",
+						"limit",
+						"3",
+						"order",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/tag/getFromUser/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/tag/getFromUser/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"tag",
+						"getFromUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "category_name",
+							"value": "JA V A2 3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category__pid",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "is_order",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/getAll",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/get/page/1/limit/10/order/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/get/page/1/limit/10/order/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"get",
+						"page",
+						"1",
+						"limit",
+						"10",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/getHotCategory/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/getHotCategory/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"getHotCategory",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/getUsed/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/getFromUser/5",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"getFromUser",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/getChildCategory/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/getChildCategory/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"getChildCategory",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/getArticleCategory/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/getArticleCategory/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"getArticleCategory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/comment/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/comment/getAll",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"comment",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/comment/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "comment_content",
+							"value": "我在自己文章回复别人评论,消息表只会生成被回复者的数据哦",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "comment_user_id",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "comment_article_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "comment_pid",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/comment/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"comment",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/comment/get/page/1/limit/15/order/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/comment/get/page/1/limit/15/order/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"comment",
+						"get",
+						"page",
+						"1",
+						"limit",
+						"15",
+						"order",
+						"0"
+					]
+				},
+				"description": "获取评论列表 \npage/页码/limit/数量/order/(1:时间倒序 2:正序)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/comment/get/article/1/page/1/limit/15/order/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/comment/get/article/1/page/1/limit/15/order/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"comment",
+						"get",
+						"article",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"15",
+						"order",
+						"1"
+					]
+				},
+				"description": "获取文章的评论列表\narticle/文章id/page/页码/limit/数量/order(1:s时间倒序 2:正序)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/comment/get/acceptor/1/page/1/limit/15/order/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/comment/get/acceptor/1/page/1/limit/15/order/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"comment",
+						"get",
+						"acceptor",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"15",
+						"order",
+						"2"
+					]
+				},
+				"description": "获取用户收到的评论(回复)\nacceptor/用户id/page/页码/limit/数量/order(1:时间倒序 2:正序)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/comment/get/date/2020-02-17/page/1/limit/15/order/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/comment/get/date/2020-02-17/page/1/limit/15/order/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"comment",
+						"get",
+						"date",
+						"2020-02-17",
+						"page",
+						"1",
+						"limit",
+						"15",
+						"order",
+						"2"
+					]
+				},
+				"description": "获取对应时间的评论列表\n/date/(YYYY-MM-DD)/page/页码/limit/数量/order/(1:时间倒序 2:正序)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/comment/delete/11",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/comment/delete/11",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"comment",
+						"delete",
+						"11"
+					]
+				},
+				"description": "删除评论\n/comment/delete/评论id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/toast/user/5/page/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/toast/user/1/page/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"toast",
+						"user",
+						"1",
+						"page",
+						"1"
+					]
+				},
+				"description": "获取用户的消息列表\ntoast/user/(用户id)/page/页数"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/toast/isToast/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/toast/isToast/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"toast",
+						"isToast",
+						"1"
+					]
+				},
+				"description": "查看用户有多少条消息\n/toast/isToast/用户id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/toast/isRead",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t11,5\n]"
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/toast/isRead",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"toast",
+						"isRead"
+					]
+				},
+				"description": "设置消息已读\n数据用json发送\n[\n\t11,1(消息id)\n]"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/like/add/user/1/article/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/like/add/user/1/article/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"like",
+						"add",
+						"user",
+						"1",
+						"article",
+						"2"
+					]
+				},
+				"description": "点赞\n/like/add/user/用户id/article/文章id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/like/saveLikes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/like/saveLikes",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"like",
+						"saveLikes"
+					]
+				},
+				"description": "将redis的点赞数据存入到数据库中"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/get/page/1/limit/14/order/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/get/page/1/limit/14/order/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"get",
+						"page",
+						"1",
+						"limit",
+						"14",
+						"order",
+						"0"
+					]
+				},
+				"description": "获取文章列表\n/article/get/page/页数/limit/数量/order/排序方式\norder：\n0：阅读量倒序\n1：点赞数倒序\n2：评论数倒序\n3：发布时间倒序\n4：阅读量正序\n5：点赞数正序\n6：评论数正序\n7：发布时间正序\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/get/user/5/page/1/limit/14/order/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/get/user/5/page/1/limit/14/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"get",
+						"user",
+						"5",
+						"page",
+						"1",
+						"limit",
+						"14",
+						"order",
+						"3"
+					]
+				},
+				"description": "获取用户的文章列表\n/user/用户id/page/页码/limit/数量/order/(0-7)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/get/cate/6/user/5/page/1/limit/14/order/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/get/cate/6/user/5/page/1/limit/14/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"get",
+						"cate",
+						"6",
+						"user",
+						"5",
+						"page",
+						"1",
+						"limit",
+						"14",
+						"order",
+						"3"
+					]
+				},
+				"description": "获取某分类下的文章列表\n/cate/分类id/user/用户id(0为不指定用户)/page/页码/limit/数量/order/(0-7)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/get/tag/6/user/5/page/1/limit/14/order/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/get/tag/6/user/5/page/1/limit/14/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"get",
+						"tag",
+						"6",
+						"user",
+						"5",
+						"page",
+						"1",
+						"limit",
+						"14",
+						"order",
+						"3"
+					]
+				},
+				"description": "获取某标签下的文章列表\n/tag/标签id/user/用户id(0为不指定用户)/page/页码/limit/数量/order/(0-7)"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/collect/get/user/5/page/1/limit/10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/collect/get/user/5/page/1/limit/10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"collect",
+						"get",
+						"user",
+						"5",
+						"page",
+						"1",
+						"limit",
+						"10"
+					]
+				},
+				"description": "获取用户收藏信息\n/user/用户id/page/页码/limit/码数"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/collect/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "collect_user_id",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "collect_article_id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/collect/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"collect",
+						"save"
+					]
+				},
+				"description": "收藏文章\ncollect_user_id 用户id\ncollect_article_id\t文章id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/collect/delete/user/5/article/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/collect/delete/user/5/article/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"collect",
+						"delete",
+						"user",
+						"5",
+						"article",
+						"3"
+					]
+				},
+				"description": "取消收藏\n/user/用户id/article/文章id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/history/get/user/5/page/1/limit/10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/history/get/user/5/page/1/limit/10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"history",
+						"get",
+						"user",
+						"5",
+						"page",
+						"1",
+						"limit",
+						"10"
+					]
+				},
+				"description": "获取浏览历史\n/user/用户id/page/页码/limit/数量\n"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/history/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/history/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"history",
+						"save"
+					]
+				},
+				"description": "添加浏览历史\narticle_id 文章id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/history/delete/user/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/history/delete/user/5",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"history",
+						"delete",
+						"user",
+						"5"
+					]
+				},
+				"description": "清空用户的浏览历史\n/user/用户id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/follow/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "follow_user_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "follow_pid",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/follow/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"follow",
+						"save"
+					]
+				},
+				"description": "添加关注用户\nfollow_user_id 用户id\nfollow_pi 被关注的用户id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/follow/get/user/5/page/1/limit/100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/follow/get/user/1/page/1/limit/100",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"follow",
+						"get",
+						"user",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"100"
+					]
+				},
+				"description": "获取用户关注列表\n/user/用户id/page/页码/limit/数量"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/follow/delete/user/5/pid/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/follow/delete/user/5/pid/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"follow",
+						"delete",
+						"user",
+						"5",
+						"pid",
+						"1"
+					]
+				},
+				"description": "删除关注\n/delete/user/用户id/pid/被关注者id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/follow/get/pid/5/page/1/limit/100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/follow/get/pid/5/page/1/limit/100",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"follow",
+						"get",
+						"pid",
+						"5",
+						"page",
+						"1",
+						"limit",
+						"100"
+					]
+				},
+				"description": "获取用户被关注列表\n/pid/用户id/page/页码/limit/数量"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/get/follow/5/page/1/limit/100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/get/follow/5/page/1/limit/100",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"get",
+						"follow",
+						"5",
+						"page",
+						"1",
+						"limit",
+						"100"
+					]
+				},
+				"description": "获取关注用户的文章\n/get/follow/用户id/page/页码/limit/数量"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/updateReadable",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "article_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/updateReadable",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"updateReadable"
+					]
+				},
+				"description": "改变文章权限\nstatus 权限id\narticle_id 文章id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/search/words/中文/page/1/limit/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Language",
+						"value": "CN",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/search/words/中文/page/1/limit/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"search",
+						"words",
+						"中文",
+						"page",
+						"1",
+						"limit",
+						"1"
+					]
+				},
+				"description": "搜索文章\n/words/关键词/page/页码/limit/数量"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/updatePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "123123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "old_password",
+							"value": "321321",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/updatePassword",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"updatePassword"
+					]
+				},
+				"description": "更换用户密码\npassword 用户旧密码\nold_password 用户新密码"
+			},
+			"response": [
+				{
+					"id": "5244997e-ddd2-4397-8039-4284ebefa2cb",
+					"name": "127.0.0.1:8080/Blog/user/updatePassword",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "123123",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "321321",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/user/updatePassword",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"user",
+								"updatePassword"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "84",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 22 Mar 2020 09:08:46 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "74AEBDA101E089BD9B86E64D7C566603",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"密码错误\",\"models\":[],\"code\":0,\"data\":null,\"pageInfo\":null,\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/getCount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/getCount",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"getCount"
+					]
+				},
+				"description": "获取用户总数"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"1"
+					]
+				},
+				"description": "获取用户基本信息\n/user/用户id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/getList/page/1/limit/100",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/getList/page/1/limit/100",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"getList",
+						"page",
+						"1",
+						"limit",
+						"100"
+					]
+				},
+				"description": "获取用户列表\n/page/页码/limit/数量"
+			},
+			"response": [
+				{
+					"id": "0b994f6b-eb95-4728-8500-04b7022e9dc9",
+					"name": "127.0.0.1:8080/Blog/user/getList/page/1/limit/100",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/user/getList/page/1/limit/100",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"user",
+								"getList",
+								"page",
+								"1",
+								"limit",
+								"100"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "944",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 21 Mar 2020 16:02:19 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "254D5440E873486AD1DB149A846FE462",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"image\":\"\",\"user_mail\":\"345345@qq.com\",\"gender\":0,\"profile\":\"\",\"id\":8,\"isAdmin\":0,\"register_time\":\"2020-03-13\",\"username\":\"谭志东\"},{\"image\":\"7ea63f8d918d46a982de3fef813d561b.jpeg\",\"user_mail\":\"234234@qq.com\",\"gender\":0,\"profile\":\"\",\"id\":7,\"isAdmin\":0,\"register_time\":\"2020-03-06\",\"username\":\"east7\"},{\"image\":\"/static/images/6915425c970349c2ad3ba4c6cb0a403f.jpeg\",\"user_mail\":\"1991174620@qq.com\",\"gender\":1,\"profile\":\"更新自我介绍321\",\"id\":1,\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"username\":\"East\"},{\"image\":\"image_path\",\"user_mail\":\"850222009@qq.com\",\"gender\":0,\"profile\":\"自我介绍\",\"id\":5,\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"username\":\"East_ZD\"},{\"image\":\"66666\",\"user_mail\":\"321@qq.com\",\"gender\":0,\"profile\":\"\",\"id\":6,\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"username\":\"East_ZD6\"}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":1,\"totalNum\":5,\"limit\":100,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "East",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "user_mail",
+							"value": "123123123@qq.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "register_time",
+							"value": "2020-02-08",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profile",
+							"value": "更新自我介绍321",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/Blog/user/update",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"update"
+					]
+				},
+				"description": "更新用户信息\n所有信息都必须要有"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/get/page/1/limit/100/order/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/get/page/1/limit/100/order/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"get",
+						"page",
+						"1",
+						"limit",
+						"100",
+						"order",
+						"1"
+					]
+				},
+				"description": "获取用户列表\n/page/页码/limit/数量/order/排序方式\n0：发表文章数倒序\n1：收藏数倒序\n2：评论数倒序\n3：阅读量倒序"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/category/getHotCategory/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/category/getHotCategory/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"category",
+						"getHotCategory",
+						"3"
+					]
+				},
+				"description": "获取热门分类\n/数量"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/message/getList/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/message/getList/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"message",
+						"getList",
+						"1"
+					]
+				},
+				"description": "获取用户私信列表\n/getList/用户id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/message/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "sender_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "receiver_id",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "这是收到的私信",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/message/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"message",
+						"save"
+					]
+				},
+				"description": "发送私信\nsender_id发送者id\nreceiver_id接收者id\ncontent内容\n"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/message/getMessage/user_id/1/p_id/6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/message/getMessage/user_id/1/p_id/6",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"message",
+						"getMessage",
+						"user_id",
+						"1",
+						"p_id",
+						"6"
+					]
+				},
+				"description": "获取用户与某用户的私信内容列表\n/getMessage/user_id/用户id/p_id/对象用户id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/message/isMessage/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/message/isMessage/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"message",
+						"isMessage",
+						"1"
+					]
+				},
+				"description": "查看用户是否有未读的私信\n/isMessage/用户id\n"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/media/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "每天爱你多一些",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/media/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"media",
+						"save"
+					]
+				},
+				"description": "上传文件"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/savePost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "summary",
+							"value": "第4条动态",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "tag",
+							"value": "java",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "tag",
+							"value": "数据库",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "is_article",
+							"value": "",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "post_type",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "pid",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/savePost",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"savePost"
+					]
+				},
+				"description": "发表动态"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/media/get/word/爱/type/2/page/1/limit/10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/media/get/word/爱/type/2/page/1/limit/10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"media",
+						"get",
+						"word",
+						"爱",
+						"type",
+						"2",
+						"page",
+						"1",
+						"limit",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/incrViews/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/incrViews/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"incrViews",
+						"1"
+					]
+				},
+				"description": "阅读量加1\nincrViews/文章id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/like/isLikeList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "article_id",
+							"value": "2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "article_id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "article_id",
+							"value": "6",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "article_id",
+							"value": "8",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "article_id",
+							"value": "9",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/like/isLikeList",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"like",
+						"isLikeList"
+					]
+				},
+				"description": "查看文章是否被用户点赞"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/article/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"10"
+					]
+				},
+				"description": "查看文章详细信息"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/sensitive/delete/9",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/sensitive/delete/9",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"sensitive",
+						"delete",
+						"9"
+					]
+				},
+				"description": "删除敏感字\n/delete/敏感词id"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/sensitive/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "word",
+							"value": "车啊",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/sensitive/save",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"sensitive",
+						"save"
+					]
+				},
+				"description": "添加敏感词"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/sensitive/getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/sensitive/getAll",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"sensitive",
+						"getAll"
+					]
+				},
+				"description": "获取所有敏感词"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/fotgetPass",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "1991174620@qq.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "East",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/fotgetPass",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"fotgetPass"
+					]
+				},
+				"description": "发送重置密码邮件"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/getForget?pid=0097534475582a4598e28c35e06d4781&id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/getForget?pid=0097534475582a4598e28c35e06d4781&id=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"getForget"
+					],
+					"query": [
+						{
+							"key": "pid",
+							"value": "0097534475582a4598e28c35e06d4781"
+						},
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				},
+				"description": "校验重置密码"
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/Blog/user/orderByArticle/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/user/orderByArticle/5",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"user",
+						"orderByArticle",
+						"5"
+					]
+				},
+				"description": "用户发表文章数排行榜"
+			},
+			"response": []
+		},
+		{
+			"name": "获取用户年月归档",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/listByYearAndMonth/user/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"listByYearAndMonth",
+						"user",
+						"1"
+					]
+				},
+				"description": "/user/用户id"
+			},
+			"response": [
+				{
+					"id": "0cee6e21-9e2d-4a61-bd7e-fc4a8c7364bf",
+					"name": "获取用户年月归档",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/listByYearAndMonth/user/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"listByYearAndMonth",
+								"user",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "135",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Mar 2020 15:55:25 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "F4960AE53D54591673BEFE0D57EC6676",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"date\":\"2020-03\",\"count\":4},{\"date\":\"2019-12\",\"count\":1}],\"code\":1,\"data\":null,\"pageInfo\":null,\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取文章列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/a/page/1/limit/2/order/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"a",
+						"page",
+						"1",
+						"limit",
+						"2",
+						"order",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "3a75c0a2-6230-4008-9edc-7fa8187640c6",
+					"name": "获取文章列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/a/page/1/limit/2/order/0",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"a",
+								"page",
+								"1",
+								"limit",
+								"2",
+								"order",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2037",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:02:24 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1},{\"category_description\":\"数据库相关\",\"category_name\":\"数据库\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":2,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":1,\"id\":2,\"title\":\"中文测试 新Testing搜索答案\",\"view_count\":3222,\"username\":\"East\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"高达\",\"creator_id\":1,\"tag_description\":\"高达相关\",\"id\":3},{\"create_time\":\"2020-02-09\",\"tag_name\":\"高达2\",\"creator_id\":5,\"tag_description\":\"\",\"id\":6}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":1,\"likes_count\":1,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":5,\"id\":1,\"title\":\"中文测试Testing 搜索\",\"view_count\":2338,\"username\":\"East_ZD\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":2,\"totalNum\":4,\"limit\":2,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取用户的文章列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/a/user/1/page/1/limit/2/order/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"a",
+						"user",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"2",
+						"order",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "41893f87-e3af-496c-9d6e-cc5d3d8d7f1c",
+					"name": "获取用户的文章列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/a/user/1/page/1/limit/2/order/0",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"a",
+								"user",
+								"1",
+								"page",
+								"1",
+								"limit",
+								"2",
+								"order",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2167",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:06:55 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1},{\"category_description\":\"数据库相关\",\"category_name\":\"数据库\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":2,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":1,\"id\":2,\"title\":\"中文测试 新Testing搜索答案\",\"view_count\":3222,\"username\":\"East\"}},{\"media\":[{\"article_id\":14,\"file_path\":\"/static/pictures/55d532b6e93744eb9e9b57d185707e79.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":10},{\"article_id\":14,\"file_path\":\"/static/pictures/1a85061a0e7b4246a43e52272666a916.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":11}],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"第4条动态\",\"create_time\":\"2020-03-24\",\"is_article\":\"1\",\"user_id\":1,\"id\":14,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":2,\"totalNum\":4,\"limit\":2,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取带某标签的文章列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/a/tag/1/page/1/limit/10/order/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"a",
+						"tag",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"10",
+						"order",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "37ef1b1a-ef47-4093-9e3b-937449e93ba9",
+					"name": "获取带某标签的文章列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/a/tag/1/page/1/limit/10/order/0",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"a",
+								"tag",
+								"1",
+								"page",
+								"1",
+								"limit",
+								"10",
+								"order",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "6990",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:18:04 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1},{\"category_description\":\"数据库相关\",\"category_name\":\"数据库\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":2,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":1,\"id\":2,\"title\":\"中文测试 新Testing搜索答案\",\"view_count\":3222,\"username\":\"East\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"高达\",\"creator_id\":1,\"tag_description\":\"高达相关\",\"id\":3},{\"create_time\":\"2020-02-09\",\"tag_name\":\"高达2\",\"creator_id\":5,\"tag_description\":\"\",\"id\":6}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":1,\"likes_count\":1,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":5,\"id\":1,\"title\":\"中文测试Testing 搜索\",\"view_count\":2338,\"username\":\"East_ZD\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-03-02\",\"tag_name\":\"新的Tag\",\"creator_id\":5,\"tag_description\":\"\",\"id\":8}],\"category\":[{\"category_description\":\"\",\"category_name\":\"新的分类\",\"create_time\":\"2020-03-02\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":7,\"is_order\":0},{\"category_description\":\"\",\"category_name\":\"jquery\",\"create_time\":\"2020-03-02\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":8,\"is_order\":0}],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":4,\"likes_count\":0,\"summary\":\"中文空&nbsp; &nbsp; &nbsp;格测试回车键测试缩进测试&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;居中测试居左Testing居右测试两端对齐文字颜色格式测试\",\"create_time\":\"2020-03-02\",\"is_article\":\"1\",\"user_id\":5,\"id\":6,\"title\":\"新的title 新的标题 搜\",\"view_count\":0,\"username\":\"East_ZD\"}},{\"media\":[{\"article_id\":10,\"file_path\":\"/static/pictures/e5b6f2172a594b51b3662b8fcc6879a4.jpeg\",\"create_time\":\"2020-03-15 01:43:18\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":7},{\"article_id\":10,\"file_path\":\"/static/pictures/44f00591dcc4476b99b306d70c8c8b97.jpeg\",\"create_time\":\"2020-03-15 01:43:18\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":8}],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"\",\"create_time\":\"2020-03-15\",\"is_article\":\"1\",\"user_id\":1,\"id\":10,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-28\",\"tag_name\":\"jquery\",\"creator_id\":5,\"tag_description\":\"\",\"id\":7}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1},{\"category_description\":\"\",\"category_name\":\"测试类\",\"create_time\":\"2020-02-28\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":6,\"is_order\":0}],\"user\":{\"comment_count\":0,\"image\":\"66666\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"321@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":6,\"username\":\"East_ZD6\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"回**的**\",\"create_time\":\"2020-02-29\",\"is_article\":\"1\",\"user_id\":6,\"id\":3,\"title\":\"测试Testing 答案\",\"view_count\":0,\"username\":\"East_ZD6\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"\",\"create_time\":\"2020-03-09\",\"is_article\":\"1\",\"user_id\":1,\"id\":9,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}},{\"media\":[{\"article_id\":14,\"file_path\":\"/static/pictures/55d532b6e93744eb9e9b57d185707e79.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":10},{\"article_id\":14,\"file_path\":\"/static/pictures/1a85061a0e7b4246a43e52272666a916.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":11}],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"第4条动态\",\"create_time\":\"2020-03-24\",\"is_article\":\"1\",\"user_id\":1,\"id\":14,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":1,\"totalNum\":7,\"limit\":10,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取带某分类的文章列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/a/cate/1/page/1/limit/10/order/0",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"a",
+						"cate",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"10",
+						"order",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "d66bcf63-38db-4321-b392-3c1245b0f17b",
+					"name": "获取带某分类的文章列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/a/cate/1/page/1/limit/10/order/0",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"a",
+								"cate",
+								"1",
+								"page",
+								"1",
+								"limit",
+								"10",
+								"order",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3007",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:17:36 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1},{\"category_description\":\"数据库相关\",\"category_name\":\"数据库\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":2,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":1,\"id\":2,\"title\":\"中文测试 新Testing搜索答案\",\"view_count\":3222,\"username\":\"East\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"高达\",\"creator_id\":1,\"tag_description\":\"高达相关\",\"id\":3},{\"create_time\":\"2020-02-09\",\"tag_name\":\"高达2\",\"creator_id\":5,\"tag_description\":\"\",\"id\":6}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":1,\"likes_count\":1,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":5,\"id\":1,\"title\":\"中文测试Testing 搜索\",\"view_count\":2338,\"username\":\"East_ZD\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-28\",\"tag_name\":\"jquery\",\"creator_id\":5,\"tag_description\":\"\",\"id\":7}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1},{\"category_description\":\"\",\"category_name\":\"测试类\",\"create_time\":\"2020-02-28\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":6,\"is_order\":0}],\"user\":{\"comment_count\":0,\"image\":\"66666\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"321@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":6,\"username\":\"East_ZD6\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"回**的**\",\"create_time\":\"2020-02-29\",\"is_article\":\"1\",\"user_id\":6,\"id\":3,\"title\":\"测试Testing 答案\",\"view_count\":0,\"username\":\"East_ZD6\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":1,\"totalNum\":3,\"limit\":10,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取关注用户的对象的文章列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/a/follow/1/page/1/limit/10/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"a",
+						"follow",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"10",
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "b6153cbd-21c7-49a0-b487-df31fb7d2482",
+					"name": "获取关注用户的对象的文章列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/a/follow/1/page/1/limit/10/order/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"a",
+								"follow",
+								"1",
+								"page",
+								"1",
+								"limit",
+								"10",
+								"order",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2231",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:19:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-03-02\",\"tag_name\":\"新的Tag\",\"creator_id\":5,\"tag_description\":\"\",\"id\":8}],\"category\":[{\"category_description\":\"\",\"category_name\":\"新的分类\",\"create_time\":\"2020-03-02\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":7,\"is_order\":0},{\"category_description\":\"\",\"category_name\":\"jquery\",\"create_time\":\"2020-03-02\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":8,\"is_order\":0}],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":4,\"likes_count\":0,\"summary\":\"中文空&nbsp; &nbsp; &nbsp;格测试回车键测试缩进测试&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;居中测试居左Testing居右测试两端对齐文字颜色格式测试\",\"create_time\":\"2020-03-02\",\"is_article\":\"1\",\"user_id\":5,\"id\":6,\"title\":\"新的title 新的标题 搜\",\"view_count\":0,\"username\":\"East_ZD\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"高达\",\"creator_id\":1,\"tag_description\":\"高达相关\",\"id\":3},{\"create_time\":\"2020-02-09\",\"tag_name\":\"高达2\",\"creator_id\":5,\"tag_description\":\"\",\"id\":6}],\"category\":[{\"category_description\":\"java相关\",\"category_name\":\"JAVA\",\"create_time\":\"2020-02-10\",\"category_pid\":0,\"category_icon\":\"\",\"creator_id\":5,\"id\":1,\"is_order\":1}],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":1,\"likes_count\":1,\"summary\":\"\",\"create_time\":\"2019-12-01\",\"is_article\":\"1\",\"user_id\":5,\"id\":1,\"title\":\"中文测试Testing 搜索\",\"view_count\":2338,\"username\":\"East_ZD\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":1,\"totalNum\":2,\"limit\":10,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取动态列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/p/page/1/limit/2/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"p",
+						"page",
+						"1",
+						"limit",
+						"2",
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "b6a4e1df-af7a-492b-96f4-fa8263e543c4",
+					"name": "获取动态列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/p/page/1/limit/2/order/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"p",
+								"page",
+								"1",
+								"limit",
+								"2",
+								"order",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1859",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:21:16 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[{\"article_id\":14,\"file_path\":\"/static/pictures/55d532b6e93744eb9e9b57d185707e79.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":10},{\"article_id\":14,\"file_path\":\"/static/pictures/1a85061a0e7b4246a43e52272666a916.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":11}],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"第4条动态\",\"create_time\":\"2020-03-24\",\"is_article\":\"0\",\"user_id\":1,\"id\":14,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}},{\"media\":[{\"article_id\":13,\"file_path\":\"/static/pictures/8900c9e3c45843649245b7cf10becb5e.jpg\",\"create_time\":\"2020-03-22 16:15:42\",\"user_id\":5,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":9}],\"tag\":[],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"<p>Hello, World!<\\/p>\",\"create_time\":\"2020-03-22\",\"is_article\":\"0\",\"user_id\":5,\"id\":13,\"title\":\"\",\"view_count\":0,\"username\":\"East_ZD\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":3,\"totalNum\":6,\"limit\":2,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取用户的动态列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/p/user/1/page/1/limit/2/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"p",
+						"user",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"2",
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "884bf4b1-0caa-4e55-80cc-167e739dbfe3",
+					"name": "获取用户的动态列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/p/user/1/page/1/limit/2/order/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"p",
+								"user",
+								"1",
+								"page",
+								"1",
+								"limit",
+								"2",
+								"order",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1916",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:21:48 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[{\"article_id\":14,\"file_path\":\"/static/pictures/55d532b6e93744eb9e9b57d185707e79.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":10},{\"article_id\":14,\"file_path\":\"/static/pictures/1a85061a0e7b4246a43e52272666a916.jpg\",\"create_time\":\"2020-03-24 14:01:17\",\"user_id\":1,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":11}],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"第4条动态\",\"create_time\":\"2020-03-24\",\"is_article\":\"0\",\"user_id\":1,\"id\":14,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}},{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"JAVA\",\"creator_id\":5,\"tag_description\":\"java相关\",\"id\":1},{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"第4条动态\",\"create_time\":\"2020-03-17\",\"is_article\":\"0\",\"user_id\":1,\"id\":11,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":3,\"totalNum\":5,\"limit\":2,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取带某标签的动态列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/p/tag/6/page/1/limit/2/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"p",
+						"tag",
+						"6",
+						"page",
+						"1",
+						"limit",
+						"2",
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "269588e3-0010-4268-bec0-fdc8d1492e54",
+					"name": "获取带某标签的动态列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/p/tag/6/page/1/limit/2/order/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"p",
+								"tag",
+								"6",
+								"page",
+								"1",
+								"limit",
+								"2",
+								"order",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "839",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:24:06 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[],\"tag\":[{\"create_time\":\"2020-02-08\",\"tag_name\":\"数据库\",\"creator_id\":1,\"tag_description\":\"MYSQL\",\"id\":2},{\"create_time\":\"2020-02-09\",\"tag_name\":\"高达2\",\"creator_id\":5,\"tag_description\":\"\",\"id\":6}],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"/static/images/asdasas16d56as48da1s5d1a6s84d6.jpg\",\"like_count\":0,\"gender\":1,\"history_count\":0,\"profile\":\"更新自我介绍321\",\"isAdmin\":0,\"register_time\":\"2020-02-04\",\"user_mail\":\"1991174620@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":1,\"username\":\"East\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"第4条动态\",\"create_time\":\"2020-03-17\",\"is_article\":\"0\",\"user_id\":1,\"id\":11,\"title\":\"\",\"view_count\":0,\"username\":\"East\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":1,\"totalNum\":1,\"limit\":2,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		},
+		{
+			"name": "获取用户关注的对象的动态列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:8080/Blog/article/p/follow/1/page/1/limit/2/order/3",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Blog",
+						"article",
+						"p",
+						"follow",
+						"1",
+						"page",
+						"1",
+						"limit",
+						"2",
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "192b4499-f98c-4acd-bb05-d6af9c74b0c4",
+					"name": "获取用户关注的对象的动态列表",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "127.0.0.1:8080/Blog/article/p/follow/1/page/1/limit/2/order/3",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"Blog",
+								"article",
+								"p",
+								"follow",
+								"1",
+								"page",
+								"1",
+								"limit",
+								"2",
+								"order",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept, client_id, uuid, Authorization",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, PUT, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://127.0.0.1:88",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "789",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/json;charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 09:24:43 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/Blog",
+							"secure": false,
+							"value": "BEC2B581A2CBE299FBFE2E0111693B68",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "127.0.0.1",
+							"path": "/",
+							"secure": false,
+							"value": "56B93149D34995ADFF3BC80E8DE5DC89",
+							"key": "JSESSIONID"
+						}
+					],
+					"body": "{\"msg\":\"成功\",\"models\":[{\"media\":[{\"article_id\":13,\"file_path\":\"/static/pictures/8900c9e3c45843649245b7cf10becb5e.jpg\",\"create_time\":\"2020-03-22 16:15:42\",\"user_id\":5,\"file_name\":\"\",\"file_type\":1,\"pid\":0,\"id\":9}],\"tag\":[],\"category\":[],\"user\":{\"comment_count\":0,\"image\":\"image_path\",\"like_count\":0,\"gender\":0,\"history_count\":0,\"profile\":\"自我介绍\",\"isAdmin\":1,\"register_time\":\"2020-02-04\",\"user_mail\":\"850222009@qq.com\",\"article_count\":0,\"follow_count\":0,\"id\":5,\"username\":\"East_ZD\"},\"article\":{\"comment_count\":0,\"likes_count\":0,\"summary\":\"<p>Hello, World!<\\/p>\",\"create_time\":\"2020-03-22\",\"is_article\":\"0\",\"user_id\":5,\"id\":13,\"title\":\"\",\"view_count\":0,\"username\":\"East_ZD\"}}],\"code\":1,\"data\":null,\"pageInfo\":{\"totalpage\":1,\"totalNum\":1,\"limit\":2,\"startNum\":0,\"page\":1},\"status\":200}"
+				}
+			]
+		}
+	]
+}

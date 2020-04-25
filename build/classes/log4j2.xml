@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 设置log4j2的自身log级别为warn -->
+<Configuration status="WARN" monitorInterval="30">  
+    <properties>  
+        <property name="LOG_HOME">C:/logs</property>  
+        <property name="FILE_NAME">mylog</property>  
+    </properties>  
+    <Appenders>  
+        <Console name="Console" target="SYSTEM_OUT">  
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />  
+        </Console>  
+        <RollingFile  name="MyFile"  
+            fileName="${LOG_HOME}/${FILE_NAME}.log"  
+            filePattern="${LOG_HOME}/$${date:yyyy-MM}/${FILE_NAME}-%d{yyyy-MM-dd HH}-%i.log"
+            immediateFlush="false">  
+            <PatternLayout  
+                pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />  
+            <Policies>  
+                <TimeBasedTriggeringPolicy interval="1" />  
+                <SizeBasedTriggeringPolicy size="10 MB" />  
+            </Policies>  
+            <DefaultRolloverStrategy max="20" />  
+        </RollingFile >  
+    </Appenders>  
+  
+    <Loggers>  
+        <Logger name="mylog" level="info" additivity="false">  
+            <AppenderRef ref="MyFile" />  
+        </Logger>  
+        <Root level="info">  
+            <AppenderRef ref="Console" />  
+            <AppenderRef ref="MyFile" />  
+        </Root>  
+    </Loggers>  
+</Configuration>
