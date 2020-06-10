@@ -27,29 +27,48 @@
     margin: auto;
 }
 
+.empty_text {
+    font-size: 32px;
+    margin-top: 8px;
+    cursor: default;
+}
+
 .loading_anim {
     text-align: center;
 }
 
 .loading_anim span {
+    display: inline-block;
     color: #337ab7;
     font-size: 36px;
     transform: rotate(180deg);
-    animation-name: loading;
-    animation-duration: 1s;
+    animation: loading 2s infinite ease-in-out;
+    -webkit-animation: loading 2s infinite ease-in-out;
+    -moz-animation: loading 2s infinite ease-in-out;
+    /* animation-name: loading;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: loading;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: loading;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: 3s;
     -moz-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite; */
 }
 
 @keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+@-webkit-keyframes loading {
     from {
         transform: rotate(0deg);
     }

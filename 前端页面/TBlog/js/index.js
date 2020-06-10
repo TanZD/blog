@@ -280,7 +280,7 @@
                 '</div>' +
                 '<div class="b_status">' +
                 '<span class="col_text iconfont icon-yanjing">' + d["article"]["view_count"] + '</span>' +
-                '<span class="col_text iconfont icon-pinglun">' + d["article"]["comment_count"] + '</span>' +
+                '<span class="col_text iconfont icon-taolunqu">' + d["article"]["comment_count"] + '</span>' +
                 '<span data-num="' + d["article"]["likes_count"] + '" data-id="' + d["article"]["id"] + '" class="col_text iconfont icon-dianzan like_btn">' + d["article"]["likes_count"] + '</span>' +
                 '</div>' +
                 '<div style="clear: both;"></div>' +

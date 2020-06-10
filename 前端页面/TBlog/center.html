@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
+    <title>个人中心</title>
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="jquery-confirm/jquery-confirm.min.css">
@@ -13,19 +13,56 @@
     <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
     <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/center.css">
+    <link rel="stylesheet" type="text/css" href="css/static.css">
 </head>
 
 <body>
     <div>
         <div id="header"></div>
         <div class="container mainbar">
-            <div class="col-xs-12 col-sm-4 col-md-3 sidebar">
-                <div>SideBar</div>
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <!-- <div class="collapse navbar-collapse" id="bs-navbar1">SideBar</div> -->
+                <div class="sidebarheader">
+                    <ul class="sidebar_ul">
+                        <li>
+                            <a href="#userInfo"><span class="iconfont icon-dingwei">个人资料</span></a>
+                        </li>
+                        <li>
+                            <a href="#toast"><span class="iconfont icon-xiaoxizhongxin" id="my_toast">我的消息</span></a>
+                        </li>
+                        <li>
+                            <a href="#article"><span class="iconfont icon-dingdan">我的博客</span></a>
+                        </li>
+                        <li>
+                            <a href="#comment"><span class="iconfont icon-pinglun">我的评论</span></a>
+                        </li>
+                        <li>
+                            <a href="#follow"><span class="iconfont icon-aixin">我的关注</span></a>
+                        </li>
+                        <li>
+                            <a href="#collect"><span class="iconfont icon-shoucang">我的收藏</span></a>
+                        </li>
+                        <li>
+                            <a href="#history"><span class="iconfont icon-bofangjilu">我的足迹</span></a>
+                        </li>
+                        <li>
+                            <a href="#message"><span class="iconfont icon-xiaoxi">私信</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-8 col-md-9">
-                <div class="center">Header</div>
+            <div class="col-xs-12 col-sm-8 col-md-9 sidebar">
+                <div class="center" id="content_bar" style="border-radius: 5px;">Header</div>
             </div>
+            <div style="clear: both;"></div>
         </div>
+        <div id="footer"></div>
+    </div>
+    <div class="side_toolbar" id="btp">
+        <a href="javascript:;" id="btp_top">TOP</a>
+    </div>
+    <div class="mess_toolbar">
+        <a href="javascript:;" id="btp_left" class="iconfont icon-gengduo"></a>
     </div>
 </body>
 

@@ -11,6 +11,13 @@ li {
     list-style-type: none;
 }
 
+#footer {
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 .mainbar {
     margin: 15px auto;
 }
@@ -18,8 +25,128 @@ li {
 .sidebar {
     padding: 0px;
     background-color: #fff;
+    transition: all .2s linear;
+    border-radius: 5px;
 }
 
-.center {
+.sidebarheader {
     background-color: #fff;
+    transition: all .2s linear;
+    border-radius: 4px;
+}
+
+.sidebarheader span {
+    transition: all .2s linear;
+    display: block;
+}
+
+.sidebar_ul li {
+    line-height: 50px;
+    /* font-weight: bold; */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* width: 220px; */
+}
+
+.sidebar_ul li:hover {
+    background-color: #e9d1d1;
+    color: #FFF!important;
+    /* transition: all .3s linear; */
+}
+
+.actived {
+    background-color: #e9d1d1;
+}
+
+.actived span {
+    color: #5c3bff!important;
+}
+
+.actived .iconf {
+    color: #FFF!important;
+}
+
+.sidebar_ul a {
+    color: #333;
+}
+
+.sidebar_ul a:hover,
+:active,
+:focus {
+    text-decoration: none!important;
+}
+
+.sidebar_ul a span {
+    padding-left: 10px;
+}
+
+
+/* .sidebar_ul a:hover {
+    color: #FFF;
+    padding-left: 10px;
+} */
+
+.iconf {
+    color: #FFF!important;
+    display: inline-block!important;
+    padding-left: 7px!important;
+}
+
+
+/* 
+#bs-navbar1 {
+    transition: all .2s linear;
+} */
+
+.mess_toolbar {
+    position: fixed;
+    left: 8px;
+    bottom: 160px;
+    width: 44px;
+    z-index: 1999;
+    display: none;
+}
+
+.mess_toolbar a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
+    text-align: center;
+    height: 44px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: #333;
+    margin: 2px 0px 0px;
+    color: #FFF;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebarheader {
+        width: 0px;
+        position: fixed;
+        left: 0px;
+        /* top: 60px; */
+        top: 0px;
+        z-index: 999;
+        height: 100%;
+        /* display: none; */
+        background-color: #333;
+        /* opacity: 0.8; */
+        border-radius: 0px 5px 5px 0px;
+    }
+    .sidebarheader span {
+        display: none;
+        color: #FFF;
+    }
+    .mess_toolbar {
+        display: block;
+    }
 }

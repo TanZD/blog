@@ -4,7 +4,7 @@
     bottom: 160px;
     width: 44px;
     z-index: 1999;
-    /*display: none;*/
+    display: none;
 }
 
 .side_toolbar a {

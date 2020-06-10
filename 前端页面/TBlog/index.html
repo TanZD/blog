@@ -167,8 +167,6 @@
                 </div>
             </div>
         </div>
-        <!-- 页尾 -->
-        <div id="footer"></div>
         <!-- <footer class="footer" style="background-color: #222">
 		    <div class="container">
 		    	<div class="navbar-header">
@@ -185,6 +183,8 @@
             <a href="javascript:;" id="btp_top">TOP</a>
         </div>
     </div>
+    <!-- 页尾 -->
+    <div id="footer"></div>
 </body>
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
@@ -194,20 +194,20 @@
 <script type="text/javascript" src="js/scrollbar.js"></script>
 <script type="text/javascript">
     $(function() {
-        $.ajax({
-            url: "http://127.0.0.1:8080/Blog/user/islogin",
-            dataType: "JSON",
-            type: "POST",
-            xhrFields: {
-                withCredentials: true
-            },
-            success: function(data) {
-                console.log(data)
-            },
-            error: function(xhr) {
-                console.log(xhr)
-            }
-        })
+        // $.ajax({
+        //     url: "http://127.0.0.1:8080/Blog/user/islogin",
+        //     dataType: "JSON",
+        //     type: "POST",
+        //     xhrFields: {
+        //         withCredentials: true
+        //     },
+        //     success: function(data) {
+        //         console.log(data)
+        //     },
+        //     error: function(xhr) {
+        //         console.log(xhr)
+        //     }
+        // })
 
     })
 </script>
